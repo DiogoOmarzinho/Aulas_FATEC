@@ -1,0 +1,40 @@
+/* Reset básico para links que viram botão */
+a {
+  display: inline-block;
+  padding: 12px 24px;
+  color: black;
+  text-decoration: none;
+  font-weight: 600;
+  font-family: Arial, sans-serif;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+/* Efeito ao passar o mouse */
+a:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Efeito ao clicar */
+a:active {
+  transform: translateY(0);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Versão alternativa (botão outline) */
+a-outline {
+  display: inline-block;
+  padding: 12px 24px;
+  border: 2px solid #4f46e5;
+  color: #4f46e5;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+a-outline:hover {
+  background-color: #4f46e5;
+  color: #ffffff;
+}

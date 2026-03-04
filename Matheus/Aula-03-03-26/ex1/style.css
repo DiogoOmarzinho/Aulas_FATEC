@@ -1,0 +1,136 @@
+:root {
+    --bg-1: #0f172a;
+    --bg-2: #111827;
+    --card: #0b1220;
+    --accent: #ff7a59;
+    --muted: #9aa4b2;
+    --text: #e6eef8;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    font-family: "Segoe UI", Roboto, Arial, sans-serif;
+    background: linear-gradient(180deg, var(--bg-1) 0%, var(--bg-2) 100%);
+    color: var(--text);
+    padding: 2rem;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    line-height: 1.45;
+}
+
+/* Centraliza o conteúdo e limita largura para leitura */
+body > * {
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Cabeçalhos */
+h1 {
+    font-size: 2.1rem;
+    margin: 1.25rem 0 0.5rem;
+    color: var(--accent);
+    letter-spacing: -0.5px;
+}
+
+h2 {
+    font-size: 1.6rem;
+    margin: 1rem 0 0.5rem;
+    color: #dbeafe;
+}
+
+h3 {
+    font-size: 1.25rem;
+    margin: 0.75rem 0;
+    color: #f0f9ff;
+}
+
+h4 {
+    font-size: 1rem;
+    margin: 0.6rem 0;
+    color: var(--muted);
+}
+
+/* Texto e links */
+p {
+    margin: 0.5rem 0 1rem;
+    color: #d0d9e6;
+}
+
+a {
+    color: var(--accent);
+    text-decoration: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+    transition:
+        color 0.18s ease,
+        opacity 0.18s ease;
+}
+
+a:hover {
+    color: #ffd6c2;
+    opacity: 0.95;
+}
+
+/* Imagens responsivas */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0.5rem 0 1rem;
+    border-radius: 8px;
+    box-shadow: 0 6px 22px rgba(2, 6, 23, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.03);
+}
+
+/* Listas */
+ul,
+ol {
+    margin: 0.5rem 0 1rem 1.25rem;
+    color: #d4dded;
+}
+
+ol[type="I"] {
+    list-style-type: upper-roman;
+}
+
+/* Destaques */
+strong,
+b {
+    color: #fff;
+}
+
+/* Linha horizontal */
+hr {
+    border: none;
+    height: 1px;
+    background: linear-gradient(
+        90deg,
+        rgba(255, 255, 255, 0.02),
+        rgba(255, 255, 255, 0.06),
+        rgba(255, 255, 255, 0.02)
+    );
+    margin: 1.25rem 0;
+}
+
+/* Pequenas otimizações para telas pequenas */
+@media (max-width: 520px) {
+    body {
+        padding: 1rem;
+    }
+    h1 {
+        font-size: 1.6rem;
+    }
+    h2 {
+        font-size: 1.2rem;
+    }
+}
